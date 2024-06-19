@@ -2,13 +2,14 @@ import { useEffect, useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import '../assets/css/lrstyles.css'
+import bg from '../assets/imgs/lr-bg.png'
 import logo from '../assets/imgs/logo.png'
 import React from "react"
 import { Link, useNavigate } from 'react-router-dom';
 
 function Login() {
   const serverUrl = import.meta.env.VITE_SERVER_URL;
-
+  console.log(bg);
   const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
